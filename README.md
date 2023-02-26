@@ -1,1 +1,1 @@
-# opsschool-project
+# OpsSchool-project
