@@ -6,13 +6,13 @@ terraform {
     }
   }
   # remote backend #
-  backend "remote" {
-    organization = "etai-tavor-company"
+  #backend "remote" {
+  #  organization = "etai-tavor-company"
 
-    workspaces {
-      name = "opsschool-project"
-    }
-  }
+   # workspaces {
+   #   name = "opsschool-project"
+   # }
+   #}
   required_version = ">= 1.2.0"
 }
 
