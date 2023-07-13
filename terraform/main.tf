@@ -16,9 +16,11 @@ resource "aws_subnet" "public" {
 
 resource "aws_security_group" "web" {
   name = "web"
+  vpc_id = aws_vpc.public.id
   ingress {
     protocol = "tcp"
-    port = 80
+    from_port = 80
+    to_port = 80
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
